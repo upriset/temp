@@ -61,10 +61,9 @@ export class AppComponent {
   async redirectTo(url: any, from: any) {
     console.log(`[${this.title}#redirectTo] ${from} | url`, [url]);
 
-    // { skipLocationChange: true }
     await this.router.navigateByUrl(`/${url}`);
 
-    if (url == '' || url == 'home') this.window.history.pushState({}, '', '/');
+    // if (url == '' || url == 'home') this.window.history.pushState({}, '', '/'); //! ONLY MAIN DIRECTORY
 
     this.db.set('last_page', url);
     console.log(`[${this.title}#redirectTo] last_page`, [this.db.get('last_page')]);
