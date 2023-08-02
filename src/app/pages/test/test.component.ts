@@ -35,4 +35,15 @@ export class TestComponent implements OnInit {
   }
 
   defaultOrder() { return 0; }
+
+  testHttp() {
+    console.log(`[${this.title}#testHttp]`);
+
+    this.app.http.get('https://jsonplaceholder.typicode.com/todos/1').subscribe((data: any) => {
+      console.log(`[${this.title}#testHttp] data`, data);
+
+      const textarea = document.getElementById('httpOutputTextarea') as HTMLTextAreaElement;
+      textarea.value = JSON.stringify(data, null, 2);
+    });
+  }
 }

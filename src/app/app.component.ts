@@ -5,6 +5,7 @@ import { DbService } from './services/db/db.service';
 
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,8 @@ export class AppComponent {
     public db: DbService,
     public router: Router,
     private cdr: ChangeDetectorRef,
-    public location: Location
+    public location: Location,
+    public http: HttpClient
   ) {
     console.log(`[${this.title}#constructor]`);
 
