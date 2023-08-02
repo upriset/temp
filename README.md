@@ -1,6 +1,6 @@
 [![pages-build-deployment](https://github.com/upriset/temp/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/upriset/temp/actions/workflows/pages/pages-build-deployment)
 
-# [temp](https://upriset.github.io/temp)
+# [temp](https://upriset.github.io/temp/)
 this is a test
 
 ---

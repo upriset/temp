@@ -5,7 +5,7 @@ echo $TITLE 'setup config...'
 echo $TITLE '- - - - - - - - - - - - - - - - - - - - - - - - - -'
 #* vars
 
-PAGE_URL='https://upriset.github.io/temp'
+PAGE_URL='https://upriset.github.io/temp/'
 echo $TITLE '- PAGE_URL=' $PAGE_URL
 
 PROJECT_NAME='temp'
